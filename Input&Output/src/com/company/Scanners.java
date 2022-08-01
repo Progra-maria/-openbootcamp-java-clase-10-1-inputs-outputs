@@ -27,9 +27,11 @@ public class Scanners {
             //guardar el contenido del fichero
                 try {
                       Scanner scan = new Scanner(fichero);
+                      //imprimir el contenido del fichero en pantalla
+                      do System.out.println(scan.nextLine());
+                    //comprobar si existen más líneas para imprimir
                          while (scan.hasNextLine());
-            //imprimir el contenido del fichero en pantalla
-                      System.out.println(scan.nextLine());
+
                      }
             //tratar excepción
                     catch (Exception e){
